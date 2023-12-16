@@ -1,0 +1,233 @@
+@import url("reset.css");
+html, body{
+    background-color: #253141;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(37,49,65,0.9) 0%,
+        #253141 80%,
+        #253141 100px
+    ), url("https://i.ytimg.com/vi/Jm_DTvGdWro/maxresdefault.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header .left-menu{
+    display: flex;
+    
+    
+}
+
+header .left-menu .menu{
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .left-menu .menu a{
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: rgb(230, 218, 218);
+    font-weight: 700;
+}
+
+header .right-menu{
+    display: flex;
+    padding: 0 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .right-menu .language{
+    color: rgba(255,255,255,0.6);
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
+header .right-menu .signin{
+    background-color:#0375d5;
+    border-radius: 5px;
+    padding:10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.container{
+    width: 1200px;
+    margin:10px auto;
+}
+#featured{
+    padding: 50px 0 50px;
+    
+}
+.title{
+    font-size: 1.8rem;
+    color:rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+}
+
+#featured .vidoes-section{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 580px 1fr 1fr;
+}
+
+.video{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#featured .center {
+    background-color:red;
+    width: 580px;
+    height: 349px;
+}
+.image{
+    width: 100%;
+    height: 349px;
+    background: url("https://th.bing.com/th/id/OIP.jdlZZiThizI50n2ZEJCEJgHaEK?pid=ImgDet&rs=1");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+.cimage{
+    width: 100%;
+    height: 349px;
+    background: url("https://th.bing.com/th/id/OIP.5Lg2CYkmEWID_5dHEBxrrwHaFE?pid=ImgDet&rs=1");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    border: 2px solid #00b4f0;
+}
+.video:nth-child(1) ,.video:nth-child(5){
+    position: relative;
+}
+.arrow{
+    height: 100%;
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.fa{
+    font-size: 2rem;
+    color: #00b4f0;
+}
+.rarrow{
+    height: 100%;
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    right: 0;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.circles{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.circle{
+    width: 40px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.backgroud{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #00b4f0;
+    margin: 0 7px;
+}
+.backgroud:hover{
+    width: 17px;
+    height:17px;
+    border-radius: 50%;
+    background-color: #00b4f0;
+    margin: 0 7px;
+}
+.active{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #00b4f0;
+}
+
+#top-games{
+
+}
+.games{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+}
+.game{
+    background:red;
+    height: 250px; 
+    border-radius: 5px;
+    background: url("https://cdn.wccftech.com/wp-content/uploads/2018/06/Spider-Man-webswinging.png");
+    background-size: cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0.75);
+    overflow: hidden;
+    cursor: pointer;
+}
+.game:hover{
+    background-color: #313f55;
+}
+.info{
+    background: #253041;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+.g-title{
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+.views{
+    font-weight: 300px;
+    color: #8c919d;
+    font-size: 0.9rem;
+}
+.fa{
+    margin-right: 5px;
+}
